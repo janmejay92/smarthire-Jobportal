@@ -96,25 +96,43 @@ function Home() {
             </p>
           </div>
 
-          <Row className="g-4">
-            {[
-              "Software Development",
-              "Data Science",
-              "Frontend Development",
-              "Backend Development",
-              "DevOps",
-              "UI/UX Design",
-            ].map((category) => (
-              <Col md={6} lg={4} key={category}>
-                <div className="category-card bg-white p-4 rounded shadow-sm">
-                  <h5 className="fw-bold">{category}</h5>
-                  <p className="text-muted mb-0">
-                    Explore latest {category.toLowerCase()} jobs.
-                  </p>
-                </div>
-              </Col>
-            ))}
-          </Row>
+         <Row className="g-4">
+  {[
+    "Software Development",
+    "Data Science",
+    "Frontend Development",
+    "Backend Development",
+    "DevOps",
+    "UI/UX Design",
+  ].map((category) => (
+    <Col md={6} lg={4} key={category}>
+
+      <Link
+        to={`/jobs?category=${encodeURIComponent(category)}`}
+        className="text-decoration-none"
+      >
+
+        <div className="category-card bg-white p-4 rounded shadow-sm">
+
+          <h5 className="fw-bold text-dark">
+            {category}
+          </h5>
+
+          <p className="text-muted mb-0">
+            Explore latest {category.toLowerCase()} jobs.
+          </p>
+
+          <div className="mt-3 text-primary fw-semibold">
+            View Jobs →
+          </div>
+
+        </div>
+
+      </Link>
+
+    </Col>
+  ))}
+</Row>
         </Container>
       </section>
 

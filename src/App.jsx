@@ -15,6 +15,10 @@ import CreateJob from "./pages/recruiter/CreateJob";
 import ManageJobs from "./pages/recruiter/ManageJobs";
 import Applicants from "./pages/recruiter/Applicants";
 import NotFound from "./pages/NotFound";
+import Companies from "./pages/Companies";
+import About from "./pages/About";
+
+
 
 
 function App() {
@@ -33,6 +37,17 @@ function App() {
           path="/jobs/:id"
           element={<JobDetails />}
         />
+        <Route
+
+        
+  path="/companies"
+  element={<Companies />}
+/>
+
+<Route
+  path="/about"
+  element={<About />}
+/>
 
         <Route path="/login" element={<Login />} />
 

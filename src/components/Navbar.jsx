@@ -54,13 +54,19 @@ function Navbar() {
               Jobs
             </Nav.Link>
 
-            <Nav.Link href="#companies">
-              Companies
-            </Nav.Link>
+          <Nav.Link
+  as={Link}
+  to="/companies"
+>
+  Companies
+</Nav.Link>
 
-            <Nav.Link href="#about">
-              About
-            </Nav.Link>
+           <Nav.Link
+  as={Link}
+  to="/about"
+>
+  About
+</Nav.Link>
 
           </Nav>
 
