@@ -1,0 +1,360 @@
+/* ========================================
+   SmartHire - Global Styles
+   ======================================== */
+
+/* ---------- Global ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero-section {
+  min-height: 75vh;
+  background: linear-gradient(
+    135deg,
+    #f8faff 0%,
+    #eef4ff 100%
+  );
+
+  display: flex;
+  align-items: center;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.hero-section h1 {
+  line-height: 1.2;
+}
+
+.hero-section .lead {
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+
+/* ---------- Hero Right Side ---------- */
+
+.hero-placeholder {
+  padding: 70px 30px;
+}
+
+.hero-placeholder .display-1 {
+  font-size: 6rem;
+}
+
+
+/* ---------- Job Search Box ---------- */
+
+.hero-section .shadow-sm {
+  border: 1px solid #e9ecef;
+}
+
+.hero-section .form-control {
+  min-height: 48px;
+}
+
+.hero-section .btn {
+  min-height: 48px;
+}
+
+
+/* ---------- Category Cards ---------- */
+
+.category-card {
+  min-height: 150px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+
+/* ---------- How It Works ---------- */
+
+section {
+  width: 100%;
+}
+
+.display-5 {
+  font-size: 3rem;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+  text-decoration: none;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 991px) {
+
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-placeholder {
+    padding: 40px 20px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .hero-section {
+    min-height: auto;
+    padding: 50px 0;
+  }
+
+  .hero-placeholder {
+    padding: 30px 15px;
+  }
+
+  .hero-placeholder .display-1 {
+    font-size: 4rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+
+}
+/* ========================================
+   Jobs Page
+   ======================================== */
+
+.jobs-page {
+  min-height: 80vh;
+  background-color: #f8f9fa;
+}
+
+.job-card {
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.job-card .card-title {
+  font-size: 1.15rem;
+}
+
+/* ========================================
+   Job Details
+   ======================================== */
+
+.job-details-page {
+  min-height: 80vh;
+  background-color: #f8f9fa;
+}
+
+.job-details-page .card {
+  border-radius: 12px;
+}
+
+.job-details-page h1 {
+  font-size: 2.2rem;
+}
+
+.job-info p {
+  margin-bottom: 10px;
+}
+
+/* ========================================
+   Authentication
+   ======================================== */
+
+.auth-page {
+  min-height: 85vh;
+  background-color: #f8f9fa;
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px 0;
+}
+
+.auth-card {
+  border-radius: 14px;
+}
+
+.auth-card .form-control {
+  min-height: 46px;
+  border-radius: 7px;
+}
+
+.auth-card .btn {
+  min-height: 48px;
+}
+
+.auth-card a {
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+/* ========================================
+   Candidate Dashboard
+   ======================================== */
+
+.dashboard-page {
+  min-height: 85vh;
+  background-color: #f8f9fa;
+}
+
+.dashboard-stat-card {
+  border-radius: 12px;
+}
+
+.dashboard-stat-card h2 {
+  font-size: 2rem;
+}
+
+.application-item:last-child {
+  border-bottom: none !important;
+}
+
+.dashboard-page .progress {
+  height: 8px;
+  border-radius: 10px;
+}
+
+/* ========================================
+   Manage Jobs
+   ======================================== */
+
+.manage-jobs-page {
+  min-height: 85vh;
+  background-color: #f8f9fa;
+}
+
+.manage-jobs-page .card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.manage-jobs-page table th,
+.manage-jobs-page table td {
+  padding: 16px;
+}
+
+/* ========================================
+   Applicants
+   ======================================== */
+
+.applicants-page {
+  min-height: 85vh;
+  background-color: #f8f9fa;
+}
+
+.applicants-page .card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.applicants-page table th,
+.applicants-page table td {
+  padding: 15px;
+}
+
+.applicants-page .form-select {
+  min-width: 140px;
+}
+
+/* ========================================
+   404 Page
+   ======================================== */
+
+.not-found-page {
+  min-height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f8f9fa;
+}
+
+.not-found-content h1 {
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #0d6efd;
+}
+
+.not-found-content h2 {
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.not-found-content p {
+  margin: 15px 0 25px;
+}
+
+/* ========================================
+   Loading
+   ======================================== */
+
+.loading-container {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
